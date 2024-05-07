@@ -17,8 +17,6 @@ gst_amount = sub_total * (GST_RATE / 100)
 grand_total = sub_total + pst_amount + gst_amount
 
 case grand_total
-when 0
-  output_msg = "oops"
 when (0..5)
   output_msg = "Pocket Change"
 when (5..20)
